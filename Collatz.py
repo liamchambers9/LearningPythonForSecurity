@@ -18,9 +18,12 @@ def collatz(number):
 write a program that lets the user type in an integer that keeps calling collatz()
 on that number until the function returns the value 1.
 '''
-
-
-number = int(input("Type your number: "))
+while True: 
+    try: 
+        number = int(input("Type your number: "))
+        break # if successful, break out of the loop 
+    except ValueError: 
+        print("You must enter an integer. Try again!")
 
 while number !=1:
     collatz(number)
