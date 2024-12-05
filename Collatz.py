@@ -9,9 +9,9 @@ if number is odd, then collatz() should print and return 3 * number + 1
 '''
 #Creating my function 
 def collatz(number):
-    if number % 2 == 0:
+    if number % 2 == 0: # Even integer 
         return number //2
-    elif number % 2 == 1:
+    elif number % 2 == 1: # Odd integer 
         return 3 * number + 1
 
 '''
